@@ -19,7 +19,10 @@
 		0A11F1EB1550F86A0043A8AE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A11F1CB1550F86A0043A8AE /* UIKit.framework */; };
 		0A11F1EC1550F86A0043A8AE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A11F1CD1550F86A0043A8AE /* Foundation.framework */; };
 		0A11F1F41550F86A0043A8AE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0A11F1F21550F86A0043A8AE /* InfoPlist.strings */; };
-		0A11F1F71550F86A0043A8AE /* TestingFramework_ARCTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A11F1F61550F86A0043A8AE /* TestingFramework_ARCTests.m */; };
+		0A11F2071550F8CB0043A8AE /* Spy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A11F2031550F8970043A8AE /* Spy.m */; };
+		0A11F2081550F8D00043A8AE /* Mock.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A11F2011550F8970043A8AE /* Mock.m */; };
+		0A11F20D1550F8F20043A8AE /* MockTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A11F20A1550F8F20043A8AE /* MockTest.m */; };
+		0A11F20E1550F8F20043A8AE /* SpyTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A11F20C1550F8F20043A8AE /* SpyTest.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,21 +40,29 @@
 		0A11F1CB1550F86A0043A8AE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		0A11F1CD1550F86A0043A8AE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		0A11F1CF1550F86A0043A8AE /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		0A11F1D31550F86A0043A8AE /* TestingFramework_ARC-Info.plist */ = {isa = PBXFileReference; path = "TestingFramework_ARC-Info.plist"; sourceTree = "<group>"; };
+		0A11F1D31550F86A0043A8AE /* TestingFramework_ARC-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TestingFramework_ARC-Info.plist"; sourceTree = "<group>"; };
 		0A11F1D51550F86A0043A8AE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		0A11F1D71550F86A0043A8AE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		0A11F1D91550F86A0043A8AE /* TestingFramework_ARC-Prefix.pch */ = {isa = PBXFileReference; path = "TestingFramework_ARC-Prefix.pch"; sourceTree = "<group>"; };
-		0A11F1DA1550F86A0043A8AE /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		0A11F1D91550F86A0043A8AE /* TestingFramework_ARC-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TestingFramework_ARC-Prefix.pch"; sourceTree = "<group>"; };
+		0A11F1DA1550F86A0043A8AE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		0A11F1DB1550F86A0043A8AE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		0A11F1DD1550F86A0043A8AE /* ViewController.h */ = {isa = PBXFileReference; path = ViewController.h; sourceTree = "<group>"; };
+		0A11F1DD1550F86A0043A8AE /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		0A11F1DE1550F86A0043A8AE /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		0A11F1E11550F86A0043A8AE /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
 		0A11F1E81550F86A0043A8AE /* TestingFramework_ARCTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestingFramework_ARCTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A11F1E91550F86A0043A8AE /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		0A11F1F11550F86A0043A8AE /* TestingFramework_ARCTests-Info.plist */ = {isa = PBXFileReference; path = "TestingFramework_ARCTests-Info.plist"; sourceTree = "<group>"; };
+		0A11F1F11550F86A0043A8AE /* TestingFramework_ARCTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TestingFramework_ARCTests-Info.plist"; sourceTree = "<group>"; };
 		0A11F1F31550F86A0043A8AE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		0A11F1F51550F86A0043A8AE /* TestingFramework_ARCTests.h */ = {isa = PBXFileReference; path = TestingFramework_ARCTests.h; sourceTree = "<group>"; };
-		0A11F1F61550F86A0043A8AE /* TestingFramework_ARCTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestingFramework_ARCTests.m; sourceTree = "<group>"; };
+		0A11F2001550F8970043A8AE /* Mock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Mock.h; sourceTree = "<group>"; };
+		0A11F2011550F8970043A8AE /* Mock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Mock.m; sourceTree = "<group>"; };
+		0A11F2021550F8970043A8AE /* Spy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Spy.h; sourceTree = "<group>"; };
+		0A11F2031550F8970043A8AE /* Spy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Spy.m; sourceTree = "<group>"; };
+		0A11F2041550F8970043A8AE /* Stub.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Stub.h; sourceTree = "<group>"; };
+		0A11F2091550F8F20043A8AE /* MockTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MockTest.h; sourceTree = "<group>"; };
+		0A11F20A1550F8F20043A8AE /* MockTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MockTest.m; sourceTree = "<group>"; };
+		0A11F20B1550F8F20043A8AE /* SpyTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpyTest.h; sourceTree = "<group>"; };
+		0A11F20C1550F8F20043A8AE /* SpyTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpyTest.m; sourceTree = "<group>"; };
+		0A2E3BB615778FBC00600AD7 /* LICENSE.TXT */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE.TXT; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +92,7 @@
 		0A11F1BC1550F8690043A8AE = {
 			isa = PBXGroup;
 			children = (
+				0A2E3BB615778FBC00600AD7 /* LICENSE.TXT */,
 				0A11F1D11550F86A0043A8AE /* TestingFramework_ARC */,
 				0A11F1EF1550F86A0043A8AE /* TestingFramework_ARCTests */,
 				0A11F1CA1550F86A0043A8AE /* Frameworks */,
@@ -111,6 +123,11 @@
 		0A11F1D11550F86A0043A8AE /* TestingFramework_ARC */ = {
 			isa = PBXGroup;
 			children = (
+				0A11F2001550F8970043A8AE /* Mock.h */,
+				0A11F2011550F8970043A8AE /* Mock.m */,
+				0A11F2021550F8970043A8AE /* Spy.h */,
+				0A11F2031550F8970043A8AE /* Spy.m */,
+				0A11F2041550F8970043A8AE /* Stub.h */,
 				0A11F1DA1550F86A0043A8AE /* AppDelegate.h */,
 				0A11F1DB1550F86A0043A8AE /* AppDelegate.m */,
 				0A11F1DD1550F86A0043A8AE /* ViewController.h */,
@@ -135,8 +152,10 @@
 		0A11F1EF1550F86A0043A8AE /* TestingFramework_ARCTests */ = {
 			isa = PBXGroup;
 			children = (
-				0A11F1F51550F86A0043A8AE /* TestingFramework_ARCTests.h */,
-				0A11F1F61550F86A0043A8AE /* TestingFramework_ARCTests.m */,
+				0A11F2091550F8F20043A8AE /* MockTest.h */,
+				0A11F20A1550F8F20043A8AE /* MockTest.m */,
+				0A11F20B1550F8F20043A8AE /* SpyTest.h */,
+				0A11F20C1550F8F20043A8AE /* SpyTest.m */,
 				0A11F1F01550F86A0043A8AE /* Supporting Files */,
 			);
 			path = TestingFramework_ARCTests;
@@ -260,6 +279,8 @@
 				0A11F1D81550F86A0043A8AE /* main.m in Sources */,
 				0A11F1DC1550F86A0043A8AE /* AppDelegate.m in Sources */,
 				0A11F1DF1550F86A0043A8AE /* ViewController.m in Sources */,
+				0A11F2071550F8CB0043A8AE /* Spy.m in Sources */,
+				0A11F2081550F8D00043A8AE /* Mock.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,7 +288,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0A11F1F71550F86A0043A8AE /* TestingFramework_ARCTests.m in Sources */,
+				0A11F20D1550F8F20043A8AE /* MockTest.m in Sources */,
+				0A11F20E1550F8F20043A8AE /* SpyTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -431,6 +453,7 @@
 				0A11F1FC1550F86A0043A8AE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0A11F1FD1550F86A0043A8AE /* Build configuration list for PBXNativeTarget "TestingFramework_ARCTests" */ = {
 			isa = XCConfigurationList;
@@ -439,6 +462,7 @@
 				0A11F1FF1550F86A0043A8AE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
