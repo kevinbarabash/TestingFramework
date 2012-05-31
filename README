@@ -1,0 +1,1 @@
+This project implements mocks and spies for Objective-C, specifically the Cocoa environment.  The project uses ARC (Automatic Reference Counting).  If your project doesn't you should still be able to use this project by building the static library and adding that, along with the two headers (Mock.h and Spy.h) to your project.
